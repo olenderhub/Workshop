@@ -9,7 +9,11 @@ connection: &connection
 development:
   <<: *connection
   database: workshops_development
+  username: workshops
+  password: test12345
 
 test: &test
   <<: *connection
   database: workshops_test
+  username: workshops
+  password: test12345
