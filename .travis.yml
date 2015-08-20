@@ -1,8 +1,8 @@
 rvm:
   - 2.2.0
 before_script:
-  - psql -c 'create database workshops_test;' -U postgres
   - psql -c 'create user workshops with createdb;' -U postgres
+  - psql -c 'create database workshops_test with owner=workshops;' -U postgres
 addons:
   postgresql: '9.3'
 
