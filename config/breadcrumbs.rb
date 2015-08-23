@@ -12,6 +12,10 @@ crumb :student_subjects do |student|
   parent :students
 end
 
+crumb :student_payments do |student|
+  link t('navbar.reports_student_payments'), report_student_payments_path
+end
+
 crumb :students do
   link t('navbar.students'), students_path
 end

@@ -19,10 +19,16 @@ teachers = Teacher.all
 end
 
 25.times do
-  Student.create!(
+  student = Student.create!(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
     birthdate: Faker::Date.between(20.years.ago, 25.years.ago)
+  )
+  payment_date = Faker::Date.between(1.months.ago, 12.months.ago)
+  student.student_payments.create(
+    amount: Faker::Number.between(1, 4) * 100,
+    payment_date: payment_date,
+    month: payment_date + 1.month
   )
 end
 

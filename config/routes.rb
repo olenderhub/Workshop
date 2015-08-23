@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   root 'visitors#index'
 
   get '/report/subjects', to: 'reports#subjects'
+  get '/report/student_payments', to: 'reports#student_payments'
 end

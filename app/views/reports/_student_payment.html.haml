@@ -1,0 +1,14 @@
+%table.table-condensed#student_payments
+  %thead
+    %tr
+      %th.full-name= t('student_payments.columns.full_name')
+      %th.amount= t('student_payments.columns.amount')
+      %th.payment-date= t('student_payments.columns.payment_date')
+      %th.month= t('student_payments.columns.month')
+  %tbody
+    - student_payments.each do |student_payment|
+      %tr
+        %td= student_payment.decorate.full_name
+        %td= student_payment.amount
+        %td= student_payment.decorate.full_payment_date
+        %td= student_payment.decorate.name_of_month
