@@ -1,6 +1,6 @@
 Application for workshops!
 
-All done (include additional tasks) without some tests
+All done (include additional tasks)
 
-Travis: https://travis-ci.org/olenderhub/Workshop.svg?branch=master
-Heroku: http://workshop-app-hub.herokuapp.com
+<p>Travis: <img src='https://travis-ci.org/olenderhub/Workshop.svg?branch=master'></p>
+<p>Heroku: http://workshop-app-hub.herokuapp.com</p>
